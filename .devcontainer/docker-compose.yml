@@ -11,7 +11,7 @@ services:
     image: postgres:16
     env_file: .env
     ports:
-      - "55432:5432" 
+      - "5432:5432" 
     volumes:
       - pg_data:/var/lib/postgresql/data
       - ../init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro

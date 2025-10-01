@@ -64,7 +64,7 @@ def main():
     execute_and_display(
         cur,
         '''
-        SELECT name, avg_cost * 0.075 as cost_with_tax
+        SELECT name, avg_cost * 1.075 as cost_with_tax
         FROM restaurants
         ''',
         "Restaurants with tax (7.5%)"
